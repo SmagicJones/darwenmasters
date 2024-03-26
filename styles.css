@@ -1,0 +1,125 @@
+:root {
+  --custom-color-1: rgb(0, 169, 255, 0.3);
+  --custom-color-1-solid: rgb(137, 207, 243, 1);
+  --custom-color-2: rgb(160, 233, 255, 0.3);
+  --custom-color-2-solid: rgb(160, 233, 255);
+  --custom-color-1-change: rgb(205, 245, 253);
+  --custom-color-2-change: rgba(40, 67, 135, 0.8);
+  --custom-color-3: #ffffff;
+  --custom-color-old: rgba(4, 59, 92, 0.5);
+}
+
+h1 {
+  color: black;
+  font-size: 20px;
+}
+
+.text-border {
+  -webkit-text-stroke: 1px black;
+}
+
+nav {
+  background: var(--custom-color-1-solid);
+}
+
+#special-button {
+  background-color: green;
+  transition: 1000ms ease-in-out;
+}
+
+#special-button:hover {
+  background-color: #ffff00;
+}
+
+@media (max-width: 1250px) {
+  .hide-logo {
+    display: none;
+  }
+  #shuffle {
+    margin-top: 57px;
+  }
+}
+
+.home-page-head {
+  background-image: linear-gradient(
+      var(--custom-color-1),
+      var(--custom-color-2)
+    ),
+    url("./assets/governance.jpeg");
+  background-size: cover;
+}
+
+.governance-page-head {
+  background-image: linear-gradient(
+      var(--custom-color-1),
+      var(--custom-color-2)
+    ),
+    url("./assets/governance.jpeg");
+  background-size: cover;
+}
+
+.conduct-page-head {
+  background-image: linear-gradient(
+      var(--custom-color-1),
+      var(--custom-color-2)
+    ),
+    url("./assets/conduct.jpg");
+  background-size: cover;
+}
+
+.triathlon-page-head {
+  background-image: linear-gradient(
+      var(--custom-color-1),
+      var(--custom-color-2)
+    ),
+    url("./assets/triathlon-page.jpg");
+  background-size: cover;
+}
+
+.open-water-page-head {
+  background-image: url("./assets/open-water-new-header.jpg");
+  background-size: cover;
+}
+
+.events-page-head {
+  background-image: linear-gradient(
+      var(--custom-color-1),
+      var(--custom-color-2)
+    ),
+    url("./assets/events.jpg");
+  background-size: cover;
+}
+
+.twisty {
+  font-size: 16px;
+  text-align: center;
+  transition: 300ms ease-in;
+}
+
+.twisty:hover {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.checkbox-wrapper {
+  background: #ffff00;
+  padding: 12px;
+}
+
+.checkbox-label {
+  background: green;
+  padding: 6px;
+}
+
+.checkbox {
+  padding: 12px;
+}
+
+.checkbox-label:has(input:checked) .checkbox {
+  padding: 50px;
+}
+
+.home-page {
+  background-image: url("./assets/governance.jpeg");
+  background-size: cover;
+}

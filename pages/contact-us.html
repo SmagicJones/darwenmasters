@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bg-[var(--custom-color-1-solid)]">
+      <div class="grid md:grid-cols-1 text-center">
+        <div>
+          <h1
+            class="text-8xl text-center font-extrabold p-2 drop-shadow-2xl text-border font-mono text-white"
+          >
+            Get In Touch
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid md:grid-cols-2 pt-4 items-center">
+      <form
+        action="https://usebasin.com/f/330e5b1ab789"
+        method="post"
+        class="grid md:grid-cols-1 p-4"
+      >
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" class="bg-slate-200 rounded" />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="bg-slate-200 rounded"
+        />
+        <label for="message">Your message:</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          class="bg-slate-200 rounded"
+        ></textarea>
+        <div class="p-2">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            type="submit"
+            value="submit"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+      <div class="bg-[var(--custom-color-1-solid)] rounded">
+        <img src="../DMSCW.svg" alt="" />
+      </div>
+    </section>
+  </body>
+</html>
