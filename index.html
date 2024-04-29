@@ -19,7 +19,7 @@
       </nav>
     </menu> -->
 
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <!-- <nav class="bg-white border-gray-200 dark:bg-gray-900">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
@@ -104,7 +104,22 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
+
+    <header>
+      <h1 class="logo clearfix"><a href="#">DMSC</a></h1>
+      <nav>
+        <a href="#" class="burger">
+          <i></i>
+        </a>
+        <ul class="menu">
+          <li><a href="./pages/governance.html">Governance</a></li>
+          <li><a href="#">Deux</a></li>
+          <li><a href="#">Trois</a></li>
+          <li><a href="#">Quatre</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <header class="min-h-screen home-page flex">
       <div class="grid md:grid-cols-1 items-center">
@@ -176,6 +191,17 @@
         resolution: 512,
         dropRadius: 20,
         perturbance: 0.04,
+      });
+
+      $(".burger").click(function () {
+        $(this).toggleClass("active");
+        $("ul.menu li").slideToggle("fast");
+      });
+
+      $(window).resize(function () {
+        if ($(window).width() > 650) {
+          $("ul.menu li").removeAttr("style");
+        }
       });
     </script>
   </body>

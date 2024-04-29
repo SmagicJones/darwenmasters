@@ -123,3 +123,218 @@ nav {
   background-image: url("./assets/governance.jpeg");
   background-size: cover;
 }
+
+header {
+  width: 100%;
+  background: #484b50;
+  height: 80px;
+  position: relative;
+}
+header h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+}
+header h1 :hover {
+  color: #9e1326;
+}
+header h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo {
+  float: left;
+  width: 15%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.menu {
+  width: 80%;
+  float: right;
+  display: inline-block;
+  text-align: right;
+  margin-top: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.menu li {
+  display: inline-block;
+  padding: 0 1%;
+  border-right: thin solid #9e1326;
+}
+.menu li:last-child {
+  border: none;
+}
+.menu li :hover {
+  color: #750e1c;
+}
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0;
+}
+
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    text-align: right;
+  }
+  .menu li {
+    display: inline-block;
+  }
+  .menu li a {
+    text-decoration: none;
+    font-size: 16px;
+  }
+}
+@media (max-width: 650px) {
+  .logo {
+    width: 70%;
+  }
+
+  .menu {
+    text-align: left;
+    width: 100%;
+    margin-top: 18px;
+    background: #484b50;
+  }
+  .menu li {
+    display: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .menu li :hover {
+    background: #54585d;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .menu li a {
+    display: table;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    overflow: hidden;
+    border-bottom: thin solid #555;
+  }
+
+  .burger {
+    width: 70px;
+    height: 70px;
+    display: block;
+    background: #9e1326;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    position: absolute;
+    top: 5px;
+    right: -25px;
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+  .burger i {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .burger i:before,
+  .burger i:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: #fff;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .burger i:before {
+    margin-top: -12px;
+  }
+  .burger i:after {
+    margin-top: 12px;
+  }
+  .burger:hover {
+    background: #750e1c;
+  }
+  .burger:hover i:before {
+    margin-top: -14px;
+  }
+  .burger:hover i:after {
+    margin-top: 14px;
+  }
+  .burger.active {
+    background: #9e1326;
+  }
+  .burger.active i {
+    background: transparent;
+  }
+  .burger.active i:before,
+  .burger.active i:after {
+    left: -5px;
+    width: 50px;
+  }
+  .burger.active i:before {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 12px;
+  }
+  .burger.active i:after {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: -12px;
+  }
+  .burger.active:hover {
+    background: #750e1c;
+  }
+  .burger.active:hover i:before,
+  .burger.active:hover i:after {
+    width: 60px;
+    margin: 0;
+    left: -10px;
+    top: 0;
+  }
+}
